@@ -1,0 +1,20 @@
+<section class="clearfix">
+  <article class="one_third">
+
+<a href="/items/new">New Item</a>
+<form action="/items" type="post">
+  <label for="search"></label>
+  <input type="text" id="search" name="filter" />
+  <button type="submit">Search in List</button>
+</form>
+<ul>
+  <% items.each_with_index do |item, index| %>
+    <li><a href="/items/<%= index %>"><%= item %></a></li>
+    <% end %>
+</ul>
+  </article>
+
+   <article class="two_third">
+    <h1>2/3 Column</h1>
+  </article>
+</section>

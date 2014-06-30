@@ -1,0 +1,25 @@
+<section class="clearfix">
+  <article class="two_third" id="list_of_soups">
+    <h1>Select a soup</h1>
+
+    <ul>
+      <% items.each_pair do |key, value| %>
+        <li><a href="/<%= key %>/"><%= value[:name] %></a></li>
+      <% end %>
+    </ul>
+
+  </article>
+  <article class="one_third">
+    <h1>Soups!</h1>
+    <p>During the 6 month web development bootcamp gSchool, I plan on living off of quite a few soups for lunch. Soups tend to be cheap, high-yield options when budgets are tight, such as when I am poor.</p>
+  </article>
+</section><!-- END row -->
+
+<section class="clearfix">
+  <article class="one_half">
+    <h1>Ingredients</h1>
+  </article>
+  <article class="one_half">
+    <h1>Recipe</h1>
+  </article>
+</section><!-- END row -->

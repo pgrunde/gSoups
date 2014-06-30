@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>
+    gSoups
+  </title>
+
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+
+  <link href="/styling.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<header>
+  <div class="wrapper">
+    <a href="/"><img src="/images/Soupslogo.png" alt="SOUPS!" /></a>
+  </div><!-- END WRAPPER -->
+</header>
+
+<nav>
+  <div class="wrapper">
+  </div><!-- END WRAPPER -->
+</nav>
+
+<div id="content">
+  <div class="wrapper">
+    <%= yield %>
+  </div><!-- END WRAPPER -->
+</div>
+<!-- END CONTENT -->
+
+<footer>
+
+  <div class="wrapper">
+    <section class="clearfix">
+      <p>Peter Grunde made this hooray</p>
+    </section><!-- end row -->
+
+  </div>
+</footer>
+
+</div>
+<!-- END WRAPPER -->
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    background-color: #ccac7c;
+}
+
+header {
+    background-color: #A03130; /* dark grey */
+}
+
+header img {
+    width: 300px;
+    height: 100px;
+}
+
+nav {
+    background-color: #f4f4f4; /* Light grey */
+}
+
+#content {
+    background-color: #fff /* White */
+}
+
+#content img {
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #FFF; /* white */
+}
+
+.wrapper {
+    margin:auto;
+    width:980px;
+}
+
+.one_half {     width:460px; }
+.one_third {    width:300px; }
+.two_third {    width:620px; }
+.one_fourth {   width:220px; }
+.three_fourth { width:700px; }
+.full_column {  width:940px; }
+
+article {
+    position:relative;
+    margin-left:20px;
+    margin-bottom:16px;
+    float:left;
+}
+
+#list_of_soups ul li {
+    background:#FBF9F2;
+    list-style-type: none;
+    padding-top: 3px;
+}
+
+article ul li a {
+    border-bottom: 2px solid #a959c3;
+    color:#b21418;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after { content: " "; display: table; }
+
+.clearfix:after { clear: both; }
+
+/* * For IE 6/7 only * Include this rule to trigger hasLayout and contain floats. */
+.clearfix { *zoom: 1; }
+
+/* to see boxes
+article {
+    box-sizing:border-box;
+    border: solid #000 1px;
+    padding: 10px;
+}
+
+section {
+    box-sizing:border-box;
+    border: solid red 1px;
+    padding: 20px 0 10px 0;
+}
+*/
