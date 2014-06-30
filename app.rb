@@ -90,7 +90,6 @@ class MyApp < Sinatra::Application
   end
 
   get "/:itemkey/" do
-    # problem may be here !!!!!
     soupkey = (params[:itemkey]).to_sym
     p "*"*80
     puts @items[soupkey][:name]
@@ -106,57 +105,6 @@ class MyApp < Sinatra::Application
   get "/grumblepugs" do
     erb :grumblepugs
   end
-
-
-
-  # get "/items" do
-  #   search = params[:filter]
-  #   found_items = []
-  #   if search == nil
-  #     erb :items, :locals => { :items => @items }, :layout => :main_layout
-  #   else
-  #     @items.each do |item|
-  #       if item.downcase.include?(search.downcase)
-  #         found_items.push(item)
-  #       end
-  #     end
-  #     erb :items, :locals => { :items => found_items }, :layout => :main_layout
-  #   end
-  # end
-  #
-  # get "/items/new" do
-  #   erb :new_item, :locals => { :items => @items }, :layout => :main_layout
-  # end
-  #
-  # post "/items/form_processing" do
-  #   data = params[:item_added]
-  #   @items.push(data)
-  #   erb :items, :locals => { :items => @items }, :layout => :main_layout
-  # end
-  #
-  # get "/items/:id" do
-  #   # this is called 'named parameters' or 'path parameters'
-  #   identifier = params[:id].to_i
-  #   erb "Showing #{@items[identifier]}: <a href='/items/#{identifier}/edit'>Edit Item</a>", :locals => { :items => @items }, :layout => :main_layout
-  # end
-  #
-  # get "/items/:id/edit" do
-  #   identifier = params[:id].to_i
-  #   erb :item_edit, :locals => { :items => @items, :iden => identifier }, :layout => :main_layout
-  # end
-  #
-  # post "/items/:id/edit" do
-  #   identifier = params[:id].to_i
-  #   data = params[:item_changed]
-  #   @items[identifier] = data
-  #   erb :items, :locals => { :items => @items }, :layout => :main_layout
-  # end
-  #
-  # post "/items/:id/delete" do
-  #   identifier = params[:id].to_i
-  #   @items.delete_at(identifier)
-  #   erb :items, :locals => { :items => @items }, :layout => :main_layout
-  # end
 
   run! if app_file == $0
 end
